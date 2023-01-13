@@ -4,7 +4,7 @@ RSpec.describe 'customer#show' do
   describe 'happy path' do
 
     it 'returns a json response with information about customers subscriptions' do
-# require "pry"; binding.pry
+
       @tea101 = Tea.create(title: "Earl Grey", description: "Black tea", temperature: "100 degrees f", brew_time: "5 min" )
       @tea102 = Tea.create(title: "Jasmin", description: "Herbal tea", temperature: "90 degrees f", brew_time: "5 min" )
       @tea103 = Tea.create(title: "Irish Breakfast", description: "Black tea", temperature: "103 degrees f", brew_time: "4 min" )
