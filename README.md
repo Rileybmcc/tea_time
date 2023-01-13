@@ -7,9 +7,9 @@
   <li>rails db:{drop,create,migrate,seed}</li>
 
 <h4>Endpoint 1: New Subscription</h4>
-<p>example call: POST "localhost:3000/api/v1/customers/1/subscriptions/create?title=Seasonal Mix&price=75.00&status=true&frequency=once a month&customer_id=1&tea_id=3"</p>
+<p>example call:</p> POST "localhost:3000/api/v1/customers/1/subscriptions/create?title=Seasonal Mix&price=75.00&status=true&frequency=once a month&customer_id=1&tea_id=3"
 
-example response:
+<p>example response:</p></p>
 {
     "outcome": "success",
     "data": {
@@ -26,9 +26,9 @@ example response:
 }
 
 <h4>Endpoint 2: Destroy Subscription</h4>
-<p>example call: DELETE "localhost:3000/api/v1/customers/1/subscriptions/3"</p>
+<p>example call:</p> DELETE "localhost:3000/api/v1/customers/1/subscriptions/3"
 
-example response:
+<p>example response:</p>
 {
     "outcome": "success",
     "data": {}
@@ -36,9 +36,9 @@ example response:
 
 
 <h4>Endpoint 3: Show Users Subscriptions</h4>
-<p>example call: GET "localhost:3000/api/v1/customers/2"</p>
+<p>example call:</p> GET "localhost:3000/api/v1/customers/2"
 
-example response:
+<p>example response:</p>
 {
     "user": {
         "id": 2,
