@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
   namespace :api do
     namespace :v1 do
-      resources :subscriptions, only: %i[new destroy]
-      resources :customers, only: [:index]
+      # resources :subscriptions, only: %i[new destroy]
+      resources :customers, only: [:show] do
+        resources :subscriptions, only: %i[create destroy]
+      end
     end
   end
 
